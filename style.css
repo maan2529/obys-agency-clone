@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'plane-regular';
+    src: url('./fonts/plain-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plane Light';
+    src: url('./fonts/plain-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'silkserif-light';
+    src: url('.//fonts/silkserif-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'silkserif-regular';
+    src: url('./fonts/silkserif-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* basic code */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Plane Light";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#loder {
+    width: 100%;
+    height: 100%;
+    background-color: #0B0B0B;
+    z-index: 999;
+    position: fixed;
+    padding: 8vw 7vw;
+
+}
+
+.line {
+    /* background-color: red; */
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3vw;
+}
+
+#line-one-part1 {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: red; */
+    width: fit-content;
+
+    margin-left: 3vw;
+
+    width: 15vw;
+    gap: 1vw;
+    height: 100%;
+}
+
+#line-one-part1 h5 {
+    font-size: 3.5vw;
+    font-family: 'silkserif-regular';
+
+}
+
+#line-one-part1 h6 {
+    font-size: 3.5vw;
+    font-family: 'silkserif-regular';
+}
+
+.line h1 {
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 7.5vw;
+    position: relative;
+
+
+}
+
+.line span {
+    font-size: 6.5vw;
+    width: 17vw;
+    height: 8vw;
+    text-transform: uppercase;
+    animation-name: nowAnime;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* background-color: red; */
+
+    /* font-weight: 500; */
+    
+}
+
+
+@keyframes nowAnime {
+    0% {
+        font-family: "Plane Light";
+        color: white;
+        /* font-weight: 500; */
+        opacity: 1;
+    }
+
+    45% {
+        font-family: "Plane Light";
+        color: white;
+        /* font-weight: 500; */
+        opacity: 0;
+    }
+
+    50% {
+        font-family: 'silkserif-regular';
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        font-weight: 400;
+        opacity: 1;
+    }
+
+    95% {
+        font-family: 'silkserif-regular';
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        font-weight: 400;
+        opacity: 0;
+
+    }
+
+
+}
+#waitMsg{
+    /* background-color: red; */
+    width: 9vw;
+    height: fit-content;
+    
+    position: absolute;
+    top: 35vw;
+    left: 28vw;
+    font-size: 1.2vw;
+    
+}
+
+
+#main {
+    position: relative;
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+
+}
