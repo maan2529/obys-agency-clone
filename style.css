@@ -43,6 +43,19 @@ html,
 body {
     width: 100%;
     height: 100%;
+    cursor: none;
+}
+
+#crsr {
+    width: 3.5vw;
+    height: 3.5vw;
+    z-index: 9999;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.7px solid white;
+    mix-blend-mode: difference;
+
+
 }
 
 #loder {
@@ -52,6 +65,7 @@ body {
     z-index: 999;
     position: fixed;
     padding: 8vw 7vw;
+    /* display: none; */
 
 }
 
@@ -72,7 +86,7 @@ body {
     /* background-color: red; */
     width: fit-content;
 
-    margin-left: 3vw;
+    margin-left: 0.8vw;
 
     width: 15vw;
     gap: 1vw;
@@ -91,10 +105,10 @@ body {
 }
 
 .line h1 {
-    font-size: 6.5vw;
+    font-size: 6.8vw;
     text-transform: uppercase;
     font-weight: 600;
-    line-height: 7.5vw;
+    line-height: 8vw;
     position: relative;
 
 
@@ -112,7 +126,7 @@ body {
     /* background-color: red; */
 
     /* font-weight: 500; */
-    
+
 }
 
 
@@ -150,16 +164,17 @@ body {
 
 
 }
-#waitMsg{
+
+#waitMsg {
     /* background-color: red; */
     width: 9vw;
     height: fit-content;
-    
+
     position: absolute;
     top: 35vw;
     left: 28vw;
     font-size: 1.2vw;
-    
+
 }
 
 
@@ -171,5 +186,73 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #151515;
+    padding-top: 1px;
+
+
+}
+
+#nav {
+    /* background-color: red; */
+    width: 100%;
+    height: 7.5vw;
+    margin-top: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+
+}
+
+#nav-left {
+    display: flex;
+    gap: 3vw;
+}
+
+#obys-logo {
+    display: flex;
+    align-items: center;
+}
+
+#nav-right {
+    display: flex;
+    gap: 3vw;
+
+}
+
+#nav-right p {
+    text-decoration: none;
+    font-size: 1.25vw;
+}
+
+#page1-body {
+    /* background-color: red; */
+    width: 72%;
+    margin-left: 28%;
+    margin-top: 5vw;
+}
+
+.page1-heading {
+    overflow: hidden;
+}
+
+#page1-span-1:hover {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-weight: 500;
+}
+
+#page1-span-2:hover {
+    -webkit-text-stroke:1px white;
+    color: transparent;
+    font-weight: 500;
+    
+
+}
+
+.page1-heading h1 {
+    text-transform: uppercase;
+    font-size: 8vw;
+    line-height: 8vw;
+    font-weight: 600;
 
 }
